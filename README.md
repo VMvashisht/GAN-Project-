@@ -14,18 +14,22 @@ Fingerprint data is widely used in medical and health-related biometric systems 
 
 ### Methodology
 #### 1. Model Architecture
-##### Generator:
-a. Takes random noise as input and outputs realistic fingerprint images.
-b. Uses transposed convolutional layers for detailed upsampling.
-##### Discriminator:
-a. Distinguishes between real and synthetic fingerprints.
-b. Incorporates convolutional layers for robust feature extraction.
+![image](https://github.com/user-attachments/assets/10d8db65-e6af-4911-ad9f-20a9ff24bdc9)
+
 
 #### 2. Training Process
-a. Adversarial training with competing networks: Generator learns to fool the discriminator. Discriminator improves its ability to differentiate synthetic from real images.
-b. Loss Functions:
+##### Hyperparameters
++ batch_size = 128
++ image_size = 64 * 64 * 3
++ latent vector size for generator input(nz) = 100
++ feature size generator(ngf) = 64
++ feature size discriminator(ndf) = 64
++ num_epochs = 150
++ learning rate(lr) = 0.0002
++ param for Adam optimizer(beta1) = 0.5
+  
+##### Loss Functions:
     1. Binary Cross-Entropy Loss for adversarial classification.
-    2. Feature Matching for stable training and improved image quality.
 
 #### 3. Dataset
 ##### SOCOFing Dataset:
