@@ -43,7 +43,7 @@ Generated fingerprints resemble real patterns with intricate details.
 #### Performance Metrics:
 Inception Score (IS): 16.48
 
-Also, we get t-SNE as well.
+#### t-SNE 
 ![image](https://github.com/user-attachments/assets/aab54bcd-7b85-4d1c-bdcb-42dd7e38f820)
 
 ### Future Work
