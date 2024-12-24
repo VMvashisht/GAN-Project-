@@ -24,7 +24,7 @@ Fingerprint data is widely used in medical and health-related biometric systems 
 + latent vector size for generator input(nz) = 100
 + feature size generator(ngf) = 64
 + feature size discriminator(ndf) = 64
-+ num_epochs = 150
++ num_epochs = 50
 + learning rate(lr) = 0.0002
 + param for Adam optimizer(beta1) = 0.5
   
